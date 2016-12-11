@@ -1,0 +1,56 @@
+.ui-overlay-a,
+.ui-page-theme-a,
+.ui-page-theme-a .ui-panel-wrapper {
+    background-color: #FFF !important;
+}
+#select {
+    width:300px; box-sizing: border-box; padding:10px; font-size: 12px; cursor: pointer; outline: none; border-radius:5px; -webkit-border-radius:5px; margin:0 auto;
+}
+#load-here {
+    margin-top:20px; font-size: 14px; overflow: auto; margin-bottom: 20px;
+}
+table {
+    width:80%; margin:0 auto; padding: 0; box-sizing: border-box; border-collapse: collapse;
+}
+table th {
+    border: 1px solid #ccc; padding:10px;box-sizing: border-box; font-size: 14px; background: #ff9800; color:#fff;
+}
+table td {
+    border: 1px solid #ccc; padding:5px; font-size: 12px;
+}
+table .odd {
+    background-color:floralwhite;
+}
+table #admin-btn div, table #delete-btn div {
+    font-size:10px; background-color:darkred; font-weight: bold; padding:5px 10px; color:#fff; border-radius:3px; -webkit-border-radius:3px; cursor: pointer;
+}
+table #admin-btn.admin div {
+    background-color: darkgreen !important;
+}
+#overlay {
+    background:rgba(0,0,0,0.5); position: fixed; top:0; left:0; right:0; bottom: 0; z-index: 99; display: none;
+}
+#dialog {
+    width:300px; position: fixed; top:calc(50% - 25px); left:calc(50% - 150px); z-index: 100; background:#fff; border-radius:5px; -webkit-border-radius:5px; box-sizing: border-box; padding:10px; overflow: hidden; display: none;
+}
+#dialog div {
+    float:left; width:140px; box-sizing: border-box; margin-top:20px; padding:10px; cursor:pointer;
+}
+#dialog div#yes {
+    background:#ff9800; color:#fff;  border-radius:5px; -webkit-border-radius:5px; font-weight:bold;
+}
+#paging {
+    width:100%; text-align: center; margin-top:10px;
+}
+#pagings {
+    width:calc(80% + 5px); margin: 0 auto; overflow: hidden; box-sizing: border-box; overflow: auto;
+}
+#pagings div {
+    float:left; font-size: 12px; font-weight: bold; padding:10px; background:#fff;border: 1px solid #ccc; margin:0 2.5px; border-radius:3px; -webkit-border-radius:3px; box-shadow:0 0 5px #ccc inset; -webkit-box-shadow: 0 0 5px #ccc inset; cursor:pointer;
+}
+#pagings div.active-page {
+    background:#ff9800; color:#fff;
+}
+#pagings div:hover {
+    background:#ccc; color: #666;
+}
