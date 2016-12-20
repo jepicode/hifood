@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>HiFood</title>
+
+        <link rel="stylesheet" href="css/jquery.mobile.min.css">
+
+    </head>
+    <body>
+        
+        <div data-role="page" id="index">
+        
+            <div class="ui-content">
+                something spesial here
+                <a href="login.php" data-transition="slide">Login disini</a>
+            </div>
+        
+        </div>
+        
+        <a href="splash.php" data-transition="slideup" data-direction="reverse" id="to-splash"></a>
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.mobile.min.js"></script>
+        <script>
+            $(document).on("pagebeforecreate",function(event){
+               $.ajax({
+                   url:"include/splashscreen.php",
+                   success:function(splash){
+                       if(splash == "yes") {
+                           alert(splash);
+                       }
+                    }
+               });
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,9 @@
+<?php
+    session_start();
+    unset($_SESSION['splash']);
+    unset($_SESSION['hifood_login']);
+    unset($_SESSION['hifood_user']);
+    unset($_SESSION['hifood_id']);
+    session_destroy();
+    header("location:index.php")
+?>
